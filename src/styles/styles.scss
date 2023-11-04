@@ -10,10 +10,11 @@
     );
 }
 html {
-    font-family: system-ui, sans-serif;
-    background: #13151a;
-    background-size: 224px;
-    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+body {
+    margin: 0;
 }
 code {
     font-family:
@@ -26,14 +27,14 @@ code {
         Courier New,
         monospace;
 }
-main {
+main, .main-styling {
     margin: auto;
     padding: 1rem;
-    width: 800px;
+    width: 1400px;
     max-width: calc(100% - 2rem);
-    font-size: 20px;
     line-height: 1.6;
 }
+
 h1 {
     font-size: 4rem;
     font-weight: 700;
