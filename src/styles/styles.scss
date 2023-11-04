@@ -13,20 +13,11 @@ html {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
 }
+
 body {
     margin: 0;
 }
-code {
-    font-family:
-        Menlo,
-        Monaco,
-        Lucida Console,
-        Liberation Mono,
-        DejaVu Sans Mono,
-        Bitstream Vera Sans Mono,
-        Courier New,
-        monospace;
-}
+
 main, .main-styling {
     margin: auto;
     padding: 1rem;
@@ -39,5 +30,10 @@ h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
     text-align: center;
 }
