@@ -1,0 +1,31 @@
+<nav id="headerNav">
+    <a href="/" id="homeLink">Home</a>
+    <a href="/genre">Genre</a>
+    <a href="/timeline">Timeline</a>
+    <a href="/staars-and-tears">STAARS and TEARS</a>
+    <a href="/lit-review">Lit Review</a>
+    <a href="/quiz">Quiz</a>
+    <a href="/major-poem">Major Poem</a>
+    <a href="/works-cited">Works Cited</a>
+</nav>
+
+<style lang="scss">
+    @import '../styles/variables.scss';
+    nav {
+        background-color: $secondary;
+        color: $text;
+        padding: 0.5rem;
+        display: grid;
+        grid-template-rows: repeat(8, auto);
+        row-gap: 0.25rem;
+        height: min-content;
+
+        a:link, a:visited {
+            color: $text;
+            text-decoration: none;
+            padding: 1rem 2rem 1rem 2rem;
+            background-color: $primary;
+            color: $background;
+        }
+    }
+</style>
