@@ -6,13 +6,13 @@ interface Props {
 const { title } = Astro.props;
 import '../styles/styles.scss';
 import Header from '../components/Header.astro';
-import Navbar from '../components/Navbar.astro';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="robots" content="noindex">
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -20,8 +20,12 @@ import Navbar from '../components/Navbar.astro';
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<script>
+		import { app, analytics } from "../components/FirebaseScript.ts";
+		</script>
 		<title>{title}</title>
 	</head>
+
 	<body>
 		<Header />
 		<slot />

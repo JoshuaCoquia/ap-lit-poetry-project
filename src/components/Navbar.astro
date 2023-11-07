@@ -2,7 +2,13 @@
     <a href="/" id="homeLink">Home</a>
     <a href="/genre">Genre</a>
     <a href="/timeline">Timeline</a>
-    <a href="/staars-and-tears">STAARS and TEARS</a>
+    <div class="dropdown">
+        <a href="/staars-and-tears" class="dropdown-btn">STAARS and TEARS</a>
+        <div class="dropdown-content">
+            <a href="/staars-and-tears/traveling-through-the-dark">Traveling through the Dark</a>
+            <a href="/staars-and-tears/once-in-the-40s">Once in the 40's</a>
+        </div>
+    </div>
     <a href="/lit-review">Lit Review</a>
     <a href="/quiz">Quiz</a>
     <a href="/major-poem">Major Poem</a>
@@ -14,22 +20,54 @@
     nav {
         // background-color: $secondary;
         color: $text;
-        margin-right: 1rem;
+        margin: 0 1rem 0 0;
+        padding: 0;
+        overflow: hidden;
         display: grid;
         grid-template-columns: repeat(8, auto);
         column-gap: 0.25rem;
-        height: min-content;
+        
+        a {
+            display: inline-block;
+            text-align: center;
+            padding: 0.75rem;
+        }
 
         a:link, a:visited {
             color: $text;
             text-decoration: none;
-            padding: 0.75rem 1rem 0.75rem 1rem;
-            
         }
+
         a:hover {
             background-color: $accent;
             border-radius: 2rem;
             color: $background;
+        }
+
+        .dropdown {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                z-index: 1;
+
+                a {
+                    display: block;
+                }
+            }
+
+            &:hover {
+                .dropdown-content {
+                    display: block;
+                }
+            }
+            .dropdown-content a:hover {
+                background-color: $secondary;
+                color: $primary;
+            }
         }
     }
 </style>
