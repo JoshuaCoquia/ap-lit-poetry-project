@@ -10,12 +10,17 @@ import Navbar from "./Navbar.astro";
     @import "../styles/variables.scss";
 
     header {
+        background-color: $background;
+        box-shadow: 0px 2px 5px $secondary;
+        position: sticky;
+        top: 0;
         color: $text;
         display: inline-grid;
         grid-template-columns: 1fr auto;
         min-width: 100%;
         justify-items: start;
         align-items: center;
+        z-index: 1;
         h1 {
             margin-left: 1rem;
             margin-right: 1rem;

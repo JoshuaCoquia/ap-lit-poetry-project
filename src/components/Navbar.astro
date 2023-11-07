@@ -25,7 +25,6 @@
         overflow: hidden;
         display: grid;
         grid-template-columns: repeat(8, auto);
-        column-gap: 0.25rem;
         
         a {
             display: inline-block;
@@ -38,10 +37,12 @@
             text-decoration: none;
         }
 
-        a:hover {
-            background-color: $accent;
-            border-radius: 2rem;
+        a:hover, .dropdown:hover .dropdown-btn {
+            background-color: $primary;
             color: $background;
+        }
+        .dropdown a:hover {
+            background-color: $accent;
         }
 
         .dropdown {
@@ -53,20 +54,15 @@
                 display: none;
                 position: absolute;
                 z-index: 1;
+                background-color: $secondary;
 
                 a {
                     display: block;
                 }
             }
 
-            &:hover {
-                .dropdown-content {
-                    display: block;
-                }
-            }
-            .dropdown-content a:hover {
-                background-color: $secondary;
-                color: $primary;
+            &:hover .dropdown-content {
+                display: block;
             }
         }
     }

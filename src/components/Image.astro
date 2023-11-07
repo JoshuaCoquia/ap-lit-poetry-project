@@ -2,17 +2,17 @@
 interface Props {
 	src: string;
     alt?: string;
-    citation: string;
+    citationLink: string;
+    citationText: string;
+    width?: string;
+    height?: string;
 }
 
-const { src, alt, citation } = Astro.props;
+const { src, alt, citationLink, citationText, width, height } = Astro.props;
 ---
 <div>
-    <img src={src} alt={alt}>
-    {citation && <small>
-        {citation}
+    <img src={src} alt={alt} width={width} height={height}>
+    {citationLink && citationText && <small>
+        (<a href={citationLink}>{citationText}</a>)
     </small>}
-    {
-        !citation && <small>Missing Citation</small>
-    }
 </div>
