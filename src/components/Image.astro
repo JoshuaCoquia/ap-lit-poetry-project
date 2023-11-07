@@ -1,0 +1,18 @@
+---
+interface Props {
+	src: string;
+    alt: string;
+    citation: string;
+}
+
+const { src, alt, citation } = Astro.props;
+---
+<div>
+    <img src={src} alt={alt}>
+    {citation && <small>
+        {citation}
+    </small>}
+    {
+        !citation && <small>Missing Citation</small>
+    }
+</div>

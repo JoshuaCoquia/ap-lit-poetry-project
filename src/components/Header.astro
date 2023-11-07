@@ -3,22 +3,22 @@ import Navbar from "./Navbar.astro";
 
 ---
 <header>
-    <h1>William Stafford</h1>
+    <h1>Words of William Stafford</h1>
 	<Navbar />
 </header>
 <style lang="scss">
     @import "../styles/variables.scss";
 
     header {
-        background: linear-gradient($secondary, $background);
         color: $text;
         display: inline-grid;
         grid-template-columns: 1fr auto;
+        min-width: 100%;
         justify-items: start;
         align-items: center;
-        min-width: 100%;
         h1 {
-            padding-left: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
     }
 </style>
