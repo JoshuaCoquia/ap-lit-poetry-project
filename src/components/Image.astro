@@ -12,7 +12,15 @@ const { src, alt, citationLink, citationText, width, height } = Astro.props;
 ---
 <div>
     <img src={src} alt={alt} width={width} height={height}>
+    <br>
     {citationLink && citationText && <small>
         (<a href={citationLink}>{citationText}</a>)
     </small>}
 </div>
+
+<style>
+    div {
+        margin: 3rem;
+        text-align: center;
+    }
+</style>
