@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 import '../styles/styles.scss';
 import Header from '../components/Header.astro';
+import SkipToMainContent from '../components/SkipToMainContent.astro';
 ---
 
 <!doctype html>
@@ -27,8 +28,9 @@ import Header from '../components/Header.astro';
 	</head>
 
 	<body>
+		<SkipToMainContent />
 		<Header />
-		<main>
+		<main id="main">
 			<slot />
 		</main>
 	</body>

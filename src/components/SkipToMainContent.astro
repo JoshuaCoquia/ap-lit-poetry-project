@@ -1,0 +1,21 @@
+---
+
+---
+<a href="#main">Skip to Main Content</a>
+<style lang="scss">
+    @import "../styles/variables.scss";
+    a {
+        position: absolute;
+        z-index: 2;
+        transform: translateY(-100%);
+        background-color: $primary;
+        color: $background;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        
+        
+        &:focus {
+            transform: translateY(0%);
+        }
+    }
+</style>
