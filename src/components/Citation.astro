@@ -1,11 +1,11 @@
 ---
 interface Props {
 	href: string;
-    citationText: string;
+    citationText?: string;
 }
 
 const { href, citationText } = Astro.props;
 ---
 <div>
-    (<a href={href}>{citationText}</a>)
+    {citationText && "("}<a href={href}>{citationText || href}</a>{citationText && ")"}
 </div>

@@ -8,19 +8,19 @@ interface Props {
     height?: string;
 }
 
-const { src, alt, citationLink, citationText, width, height } = Astro.props;
+const { src, alt, citationLink: href, citationText, width, height } = Astro.props;
+import Citation from './Citation.astro';
 ---
 <div>
     <img src={src} alt={alt} width={width} height={height}>
     <br>
-    {citationLink && citationText && <small>
-        (<a href={citationLink}>{citationText}</a>)
-    </small>}
+    <Citation href={href} citationText={citationText} />
 </div>
 
 <style>
     div {
-        margin: 3rem;
+        margin: 3rem 0rem;
         text-align: center;
+        overflow: hidden;
     }
 </style>

@@ -1,30 +1,40 @@
 ---
+import Citation from '../components/Citation.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Works Cited - Words of William Stafford">
-	<main>
-		<h2>Works Cited</h2>
-		<h3>Genre</h3>
-		<ul>
-			<li>
-				<a href="https://www.languagehumanities.org/what-are-the-different-types-of-contemporary-poetry.htm">https://www.languagehumanities.org/what-are-the-different-types-of-contemporary-poetry.htm</a>
-			</li>
-		</ul>
-		<h3>STAARS and TEARS</h3>
-		<ul>
-			<li><a href="https://www.poetryfoundation.org/poems/42775/traveling-through-the-dark">https://www.poetryfoundation.org/poems/42775/traveling-through-the-dark</a></li>
-			<li><a href="https://poets.org/poem/once-40s">https://poets.org/poem/once-40s</a></li>
-			<li><a href="https://www.poetryfoundation.org/poems/42787/accountability">https://www.poetryfoundation.org/poems/42787/accountability</a></li>
-			<li><a href="https://www.poetryfoundation.org/poems/42786/bess-56d2216a0c3d2">https://www.poetryfoundation.org/poems/42786/bess-56d2216a0c3d2</a></li>
-		</ul>
-	</main>
+	<h2>Works Cited</h2>
+	<h3>Genre</h3>
+	<ul>
+		<li><Citation href='https://www.languagehumanities.org/what-are-the-different-types-of-contemporary-poetry.htm'/></li>
+		<li><Citation href="https://paintingsonline.com.au/blogs/blogs/what-is-contemporary-art" /></li>
+		<li><Citation href="https://www.silverpetticoatreview.com/modern-romanticism-101-guide"></li>
+	</ul>
+	<h3>STAARS and TEARS</h3>
+	<ul>
+		<h4>Traveling through the Dark</h4>
+		<li><Citation href="https://www.poetryfoundation.org/poems/42775/traveling-through-the-dark" /></li>
+		<h4>Once in the 40's</h4>
+		<li><Citation href="https://poets.org/poem/once-40s"></li>
+		<h4>Accountability</h4>
+		<li><Citation href="https://www.poetryfoundation.org/poems/42787/accountability" /></li>
+		<h4>Bess</h4>
+		<li><Citation href="https://www.poetryfoundation.org/poems/42786/bess-56d2216a0c3d2" /></li>
+	</ul>
 </Layout>
 
 <style lang="scss">
 main {
 	ul {
 		list-style-type: none;
+		margin: 0rem;
+	}
+	h3 {
+		margin: 1.5rem 0rem 0.125rem 0rem;
+	}
+	h4 {
+		margin: 1.5rem 0rem 0.125rem 0rem;
 	}
 }
 </style>

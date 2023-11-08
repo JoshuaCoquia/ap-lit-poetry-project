@@ -38,12 +38,9 @@
             text-decoration: none;
         }
 
-        a:hover, .dropdown:hover .dropdown-btn {
+        a:hover, a:focus {
             background-color: $primary;
             color: $background;
-        }
-        .dropdown a:hover {
-            background-color: $accent;
         }
 
         .dropdown {
@@ -62,9 +59,13 @@
                 }
             }
 
-            &:hover .dropdown-content {
+            &:hover .dropdown-content, &:focus .dropdown-content {
                 display: block;
             }
         }
+        .dropdown:focus-within > .dropdown-content {
+            display: block;
+        }
+        
     }
 </style>
