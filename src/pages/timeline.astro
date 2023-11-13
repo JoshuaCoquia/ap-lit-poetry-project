@@ -13,17 +13,17 @@ import Citation from '../components/Citation.astro';
 	</ul>
 	<br>
 	<ul class="timeline">
-		<li class="lightred"><p><strong>January 17, 1914</strong> - Born in Hutchin, Kansas. <Citation href="http://poets.org/poet/william-stafford"/ citationText='poets.org'></p></li>
-		<li><p><strong>1937</strong> - Recieved bachelor's degree from the University of Kansas. <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' /></p></li>
-		<li class="lightred"><p><strong>1944</strong> - Married Dorothy Hope Frantz. <Citation href="http://poets.org/poet/william-stafford" citationText="poets.org" /></p></li>
-		<li class="lightgreen"><p><strong>1945</strong> - The contemporary period started after the end of World War II. People started writing contemporary poetry. <Citation href="https://poemanalysis.com/definition/contemporary-period/" citationText="poemanalysis.com" /></p></li>
-		<li><p><strong>1947</strong> - Published master theis under the title Down in My Heart. <Citation href="https://www.britannica.com/biography/William-Stafford" citationText="Britannica" /></p></li>
-		<li><p><strong>1948</strong> - Started teaching at Lewis and Clark College. <Citation href="http://poets.org/poet/william-stafford" citationText='poets.org'/></p></li>
-		<li><p><strong>1955</strong> - Recieved a doctorate from the Univeristy of Iowa. <Citation href="https://www.britannica.com/biography/William-Stafford" citationText="Britannica" /></p></li>
-		<li><p><strong>1962</strong> - Published first major collection of poems titled Traveling through the Dark. <Citation href="http://poets.org/poet/william-stafford" citationText="poets.org" /></p></li>
-		<li><p><strong>1964</strong> - Awarded "the Poetry Society of America's prestigious Shelley Memorial Award." <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' /></p></li>
-		<li><p><strong>1979</strong> - Retired. <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' /></p></li>
-		<li class="lightred"><p><strong>August 28, 1993</strong> - Passed away. <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' /></p></li>
+		<li class="lightred"><p><strong>January 17, 1914</strong> - Stafford was born in Hutchin, Kansas <Citation href="http://poets.org/poet/william-stafford"/ citationText='poets.org' />.</p></li>
+		<li><p><strong>1937</strong> - Stafford recieved bachelor's degree from the University of Kansas <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' />.</p></li>
+		<li class="lightred"><p><strong>1944</strong> - Stafford married Dorothy Hope Frantz <Citation href="http://poets.org/poet/william-stafford" citationText="poets.org" />.</p></li>
+		<li class="lightgreen"><p><strong>1945</strong> - The contemporary period started after the end of World War II. People started writing contemporary poetry <Citation href="https://poemanalysis.com/definition/contemporary-period/" citationText="poemanalysis.com" />.</p></li>
+		<li><p><strong>1947</strong> - Stafford published master theis under the title <i>Down in My Heart</i>. This thesis was based on his experiences during World War II working in outdoor work camps. <Citation href="https://www.britannica.com/biography/William-Stafford" citationText="Britannica" />. As a conscientious objector, he opposed military service. <Citation href="https://www.britannica.com/topic/conscientious-objector" citationText="Britannica" />.</p></li>
+		<li><p><strong>1948</strong> - Stafford started teaching at Lewis and Clark College <Citation href="http://poets.org/poet/william-stafford" citationText='poets.org'/>.</p></li>
+		<li><p><strong>1955</strong> - Stafford recieved a doctorate from the University of Iowa <Citation href="https://www.britannica.com/biography/William-Stafford" citationText="Britannica" />.</p></li>
+		<li><p><strong>1962</strong> - Stafford published his first major collection of poems titled <i>Traveling through the Dark</i>&nbsp;<Citation href="http://poets.org/poet/william-stafford" citationText="poets.org" />.</p></li>
+		<li><p><strong>1964</strong> - Stafford was awarded the Shelley Memorial Award by the Poetry Society of America <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' />.</p></li>
+		<li><p><strong>1979</strong> - Stafford retired <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' />.</p></li>
+		<li class="lightred"><p><strong>August 28, 1993</strong> - Stafford passed away <Citation href="http://poets.org/poet/william-stafford"/ citationText='poets.org' />.</p></li>
 	</ul>
 </Layout>
 
@@ -90,7 +90,7 @@ import Citation from '../components/Citation.astro';
 		content: '';
 		position: absolute;
 		width: 6px;
-		background-color: $primary;
+		background-color: $text;
 		top: 0;
 		bottom: 0;
 		left: 50%;
@@ -99,7 +99,7 @@ import Citation from '../components/Citation.astro';
 
 	@media screen and (max-width: 600px) {
 		.timeline {
-			width: 100vh;
+			width: 90%;
 			margin: 0;
 			&::after {
 				left: 0px;
