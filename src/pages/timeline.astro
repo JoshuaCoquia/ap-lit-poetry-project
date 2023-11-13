@@ -1,11 +1,54 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Citation from '../components/Citation.astro';
 ---
 
 <Layout title="Timeline - Words of William Stafford">
 	<h2>Timeline</h2>
+	<ul>
+		<li><p>January 17, 1914 - Born in Hutchin, Kansas. <Citation href="http://poets.org/poet/william-stafford"/ citationText='poets.org'></p></li>
+		<li><p>1937 - Recieved bachelor's degree from the University of Kansas. <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' /></p></li>
+		<li><p>1944 - Married Dorothy Hope Frantz. <Citation href="http://poets.org/poet/william-stafford" citationText="poets.org" /></p></li>
+		<li><p>1945 - The contemporary period started after the end of World War II. People started writing contemporary poetry. <Citation href="https://poemanalysis.com/definition/contemporary-period/" citationText="poemanalysis.com" /></p></li>
+		<li><p>1947 - Published master theis under the title Down in My Heart. <Citation href="https://www.britannica.com/biography/William-Stafford" citationText="Britannica" /></p></li>
+		<li><p>1948 - Started teaching at Lewis and Clark College. <Citation href="http://poets.org/poet/william-stafford" citationText='poets.org'/></p></li>
+		<li><p>1955 - Recieved a doctorate from the Univeristy of Iowa. <Citation href="https://www.britannica.com/biography/William-Stafford" citationText="Britannica" /></p></li>
+		<li><p>1962 - Published first major collection of poems titled Traveling through the Dark. <Citation href="http://poets.org/poet/william-stafford" citationText="poets.org" /></p></li>
+		<li><p>1964 - Awarded "the Poetry Society of America's prestigious Shelley Memorial Award." <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' /></p></li>
+		<li><p>1979 - Retired. <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' /></p></li>
+		<li><p>August 28, 1993 - Passed away. <Citation href="https://www.oregonencyclopedia.org/articles/stafford_william_1914_1993_/" citationText='Oregon Encyclopedia' /></p></li>
+	</ul>
 </Layout>
 
 <style lang="scss">
-	
+	@import '../styles/variables.scss';
+	ul {
+		list-style-type: none;
+		display: grid;
+		padding: 0;
+		margin: 0 auto;
+		position: relative;
+		
+	}
+	// ul::after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	width: 6px;
+	// 	background-color: white;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	left: 50%;
+	// 	margin-left: -3px;
+	// }
+	// li {
+	// 	padding: 10px 40px;
+	// 	position: relative;
+	// 	background-color: inherit;
+	// 	width: 50%;
+	// }
+	@media screen and (max-width: 600px) {
+		ul {
+			grid-template-columns: auto;
+		}
+	}
 </style>

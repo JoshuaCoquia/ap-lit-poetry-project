@@ -9,3 +9,8 @@ const { href, citationText } = Astro.props;
 <div>
     {citationText && "("}<a href={href}>{citationText || href}</a>{citationText && ")"}
 </div>
+<style lang="scss">
+    div {
+        display: inline;
+    }
+</style>
