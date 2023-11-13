@@ -20,6 +20,11 @@ main, .main-styling {
     max-width: calc(100% - 2rem);
     line-height: 1.6;
 }
+@media screen and (max-width: 600px) {
+    main {
+        width: 90%;
+    }
+}
 
 h1 {
     font-size: 1.75rem;
