@@ -2,13 +2,13 @@
 interface Props {
 	src: string;
     alt?: string;
-    citationLink: string;
+    href: string;
     citationText: string;
     width?: string;
     height?: string;
 }
 
-const { src, alt, citationLink: href, citationText, width, height } = Astro.props;
+const { src, alt, href, citationText, width, height } = Astro.props;
 import Citation from './Citation.astro';
 ---
 <div>
