@@ -25,30 +25,80 @@ import Citation from '../components/Citation.astro';
 	ul {
 		list-style-type: none;
 		display: grid;
+		grid-template-columns: auto;
 		padding: 0;
 		margin: 0 auto;
 		position: relative;
-		
+		row-gap: 1rem;
 	}
-	// ul::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	width: 6px;
-	// 	background-color: white;
-	// 	top: 0;
-	// 	bottom: 0;
-	// 	left: 50%;
-	// 	margin-left: -3px;
-	// }
-	// li {
-	// 	padding: 10px 40px;
-	// 	position: relative;
-	// 	background-color: inherit;
-	// 	width: 50%;
-	// }
+	ul::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		background-color: $primary;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		margin-left: -3px;
+	}
+	li {
+		text-align: center;
+		padding: 0.5rem 1rem;
+		position: relative;
+		background-color: $secondary;
+		max-width: calc(50% - 2rem);
+		&::after {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			right: -1rem;
+			background-color: $background;
+			border: 4px solid $accent;
+			top: 1.25rem;
+			border-radius: 50%;
+			z-index: 1;
+		}
+	}
+
+	li:nth-child(odd) {
+		left: 0;
+	}
+
+	li:nth-child(even) {
+		left: 50%;
+		&::after {
+			left: -1rem;
+		}
+	}
+
 	@media screen and (max-width: 600px) {
 		ul {
-			grid-template-columns: auto;
+			width: 100vh;
+			margin: 0;
+		}
+		
+		/* Place the timelime to the left */
+		ul::after {
+			left: 0px;
+		}
+		
+		/* Full-width containers */
+		li {
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 25px;
+			max-width: 100%;
+			&::after {
+				// top: 50%;
+			}
+		}
+
+		li:nth-child(odd)::after {
+			left: -16px;
+		}
+		li:nth-child(even) {
+			left: 0%;
 		}
 	}
 </style>
