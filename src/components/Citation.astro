@@ -6,11 +6,11 @@ interface Props {
 
 const { href, citationText } = Astro.props;
 ---
-<div>
+<span>
     {citationText && "("}<a href={href}>{citationText || href}</a>{citationText && ")"}
-</div>
+</span>
 <style lang="scss">
-    div {
+    span {
         display: inline;
     }
 </style>

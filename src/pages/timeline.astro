@@ -6,10 +6,10 @@ import Citation from '../components/Citation.astro';
 <Layout title="Timeline - Words of William Stafford">
 	<h2>Timeline</h2>
 	<ul class="key">
-		<p>Key</p>
-		<li class="lightred"><p>Light Red - Personal</p></li>
-		<li><p>Light Blue - Career</p></li>
-		<li class="lightgreen"><p>Light Green - Genre</p></li>
+		<p><strong>Key</strong></p>
+		<li class="lightred"><p><strong>Light Red</strong> - Personal</p></li>
+		<li><p><strong>Light Blue</strong> - Career</p></li>
+		<li class="lightgreen"><p><strong>Light Green</strong> - Genre</p></li>
 	</ul>
 	<br>
 	<ul class="timeline">
@@ -54,7 +54,7 @@ import Citation from '../components/Citation.astro';
 		display: grid;
 		grid-template-columns: auto;
 		position: relative;
-		row-gap: 1rem;
+		row-gap: 2rem;
 		li {
 			text-align: center;
 			padding: 0.5rem 1rem;
@@ -66,7 +66,7 @@ import Citation from '../components/Citation.astro';
 				position: absolute;
 				width: 25px;
 				height: 25px;
-				right: -1rem;
+				right: -17px;
 				background-color: $background;
 				border: 4px solid $accent;
 				top: 1.25rem;
@@ -80,7 +80,7 @@ import Citation from '../components/Citation.astro';
 			&:nth-child(even) {
 				left: 50%;
 				&::after {
-					left: -1rem;
+					left: -16px;
 				}
 			}
 		}
