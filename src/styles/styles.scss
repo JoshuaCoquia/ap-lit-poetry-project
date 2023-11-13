@@ -10,7 +10,9 @@ body {
     padding: 0;
     background-color: $background;
     min-height: 100vh;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
 }
 
 main, .main-styling {
@@ -18,8 +20,9 @@ main, .main-styling {
     margin: auto;
     width: 900px;
     max-width: calc(100% - 2rem);
-    line-height: 1.6;
+    flex: 1;
 }
+
 @media screen and (max-width: 600px) {
     main {
         width: 90%;
@@ -61,4 +64,8 @@ h4 {
     grid-template-columns: auto 1fr;
     justify-content: center;
     column-gap: 3rem;
+}
+
+a:link, a:visited {
+    color: $accent;
 }
