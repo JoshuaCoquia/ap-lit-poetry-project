@@ -6,16 +6,18 @@
     @import "../styles/variables.scss";
     a {
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         transform: translateY(-100%);
-        background-color: $secondary;
-        color: $text;
+        background-color: $background;
+        color: $background;
         text-decoration: none;
         margin-left: 1.5rem;
         padding: 0.75rem;
         
         &:focus {
             transform: translateY(1rem);
+            background-color: $secondary;
+            color: $text;
         }
     }
 </style>
