@@ -8,9 +8,9 @@ import Image from '../components/Image.astro';
 	<h2>Timeline</h2>
 	<ul class="key">
 		<p><strong>Key</strong></p>
-		<li class="lightred"><p><strong>Light Red</strong> - Personal</p></li>
-		<li><p><strong>Light Blue</strong> - Career</p></li>
-		<li class="lightgreen"><p><strong>Light Green</strong> - Genre</p></li>
+		<li class="lightred"><p>Personal</p></li>
+		<li><p>Career</p></li>
+		<li class="lightgreen"><p>Genre</p></li>
 	</ul>
 	<ul class="timeline">
 		<li class="lightred"><p><strong>January 17, 1914</strong> - "Stafford was born in Hutchison, Kansas" <Citation href="http://poets.org/poet/william-stafford"/ citationText='poets.org' />.</p></li>
@@ -44,10 +44,10 @@ import Image from '../components/Image.astro';
 		}
 	}
 	.key {
-		width: 50%;
-		text-align: center;
 		li {
 			padding: 0 0.5rem;
+			width: fit-content;
+			text-align: center;
 		}
 	}
 	.timeline {
