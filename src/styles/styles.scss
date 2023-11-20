@@ -74,3 +74,8 @@ h4 {
 a:link, a:visited {
     color: $accent;
 }
+
+*::selection {
+    background: $accent;
+    color: $background;
+}
