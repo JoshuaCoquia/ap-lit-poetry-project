@@ -79,3 +79,9 @@ a:link, a:visited {
     background: $accent;
     color: $background;
 }
+
+iframe {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 1rem $secondary;
+}
