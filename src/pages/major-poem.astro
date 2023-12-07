@@ -1,34 +1,43 @@
 ---
 import Citation from '../components/Citation.astro';
 import Layout from '../layouts/Layout.astro';
+import Image from '../components/Image.astro';
+import '../styles/two-columns.scss';
 ---
 
 <Layout title="Major Poem - Words of William Stafford">
 	<h2>Major Poem</h2>
-	<h3><i>Traveling through the Dark</i></h3>
-	<p>"Traveling through the dark I found a deer <br>
-		dead on the edge of the Wilson River road. <br>
-		It is usually best to roll them into the canyon: <br>
-		that road is narrow; to swerve might make more dead. <br>
-		<br>
-		By glow of the tail-light I stumbled back of the car <br>
-		and stood by the heap, a doe, a recent killing; <br>
-		she had stiffened already, almost cold. <br>
-		I dragged her off; she was large in the belly. <br>
-		<br>
-		My fingers touching her side brought me the reason— <br>
-		her side was warm; her fawn lay there waiting, <br>
-		alive, still, never to be born. <br>
-		Beside that mountain road I hesitated. <br>
-		<br>
-		The car aimed ahead its lowered parking lights; <br>
-		under the hood purred the steady engine. <br>
-		I stood in the glare of the warm exhaust turning red; <br>  
-		around our group I could hear the wilderness listen. <br>
-		<br>
-		I thought hard for us all—my only swerving—, <br>  
-		then pushed her over the edge into the river." <br>
-		<Citation href="https://www.poetryfoundation.org/poems/42775/traveling-through-the-dark" citationText='Poetry Foundation'/></p>
+	<div class="two-columns">
+		<section>
+			<h3><i>Traveling through the Dark</i></h3>
+			<p>"Traveling through the dark I found a deer <br>
+				dead on the edge of the Wilson River road. <br>
+				It is usually best to roll them into the canyon: <br>
+				that road is narrow; to swerve might make more dead. <br>
+				<br>
+				By glow of the tail-light I stumbled back of the car <br>
+				and stood by the heap, a doe, a recent killing; <br>
+				she had stiffened already, almost cold. <br>
+				I dragged her off; she was large in the belly. <br>
+				<br>
+				My fingers touching her side brought me the reason— <br>
+				her side was warm; her fawn lay there waiting, <br>
+				alive, still, never to be born. <br>
+				Beside that mountain road I hesitated. <br>
+				<br>
+				The car aimed ahead its lowered parking lights; <br>
+				under the hood purred the steady engine. <br>
+				I stood in the glare of the warm exhaust turning red; <br>  
+				around our group I could hear the wilderness listen. <br>
+				<br>
+				I thought hard for us all—my only swerving—, <br>  
+				then pushed her over the edge into the river." <br>
+				<Citation href="https://www.poetryfoundation.org/poems/42775/traveling-through-the-dark" citationText='Poetry Foundation'/>
+			</p>
+		</section>
+		<Image citationText="Unsplash" src='https://images.unsplash.com/photo-1484359755660-c7ed8f31f0cc?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' href="https://unsplash.com/photos/view-of-road-D_5iQVxKkPY" />
+	</div>
+
 	
 	<h3>Poem Analysis</h3>
 	<p><a href="https://docs.google.com/document/d/1REGvURnptRcDFE3KL2lDiPzKKrBG9L95yBIqdh0XHFA/edit?usp=sharing">Open in Google Docs</a>
