@@ -32,6 +32,13 @@ main, .main-styling {
     main {
         width: 95%;
     }
+
+}
+
+@media screen and (max-width: 800px) {
+    iframe {
+        width: 100%;
+    }
 }
 
 h1 {
